@@ -3,10 +3,10 @@ async function resetPassword() {
     const uidb64 = urlParams.get('uidb64');
     const token = urlParams.get('token');
     const password = document.getElementById('newPassword').value;
-    const API_URL = 'https://factor-cadusaboya.loca.lt';
+    const API_URL = 'http://factor-backend-1480867072.sa-east-1.elb.amazonaws.com:8000';
 
     
-    const response = await fetch(`https://factor-cadusaboya.loca.lt/accounts/reset-password/${uidb64}/${token}/`, {
+    const response = await fetch(`${API_URL}/accounts/reset-password/${uidb64}/${token}/`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
