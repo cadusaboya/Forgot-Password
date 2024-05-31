@@ -6,7 +6,7 @@ async function resetPassword() {
     const API_URL = 'https://factor-cadusaboya.loca.lt';
 
     
-    const response = await fetch(`${API_URL}/accounts/reset-password/${uidb64}/${token}/`, {
+    const response = await fetch(`https://factor-cadusaboya.loca.lt/accounts/reset-password/${uidb64}/${token}/`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
