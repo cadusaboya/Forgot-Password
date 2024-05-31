@@ -5,7 +5,7 @@ async function resetPassword() {
     const token = segments[segments.length - 1];
     const password = document.getElementById('newPassword').value;
     
-    const response = await fetch(`https://your-django-backend-url/reset-password/${uidb64}/${token}/`, {
+    const response = await fetch(`https://factor-cadusaboya.loca.lt/reset-password/${uidb64}/${token}/`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
